@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    Automatically appends the user who triggered the build to the build display name.
+</div>
