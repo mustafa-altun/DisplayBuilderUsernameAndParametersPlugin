@@ -7,19 +7,40 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>4.71</version>
+        <version>6.2211.v27f680c93c53</version>
         <relativePath/>
     </parent>
 
-    <groupId>tr.com.infina.jenkins</groupId>
-    <artifactId>build-user-display-plugin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>io.jenkins.plugins</groupId>
+    <artifactId>displaybuilderusernameandparameters</artifactId>
+    <version>${changelist}</version>
     <packaging>hpi</packaging>
-    <name>Build User Display Plugin</name>
+    <name>Display Builder Username And Parameters Plugin</name>
+    <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
+        <developerConnection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+        <tag>${scmTag}</tag>
+    </scm>
 
     <properties>
-        <jenkins.version>2.387.3</jenkins.version>
-        <java.level>21</java.level>
+        <jenkins.baseline>2.541</jenkins.baseline>
+        <jenkins.version>${jenkins.baseline}.3</jenkins.version>
+        <changelist>999999-SNAPSHOT</changelist>
+        <hpi.strictBundledArtifacts>true</hpi.strictBundledArtifacts>
+        <banObsoleteDependencyOverrides.skip>false</banObsoleteDependencyOverrides.skip>
+        <ban-junit4-imports.skip>false</ban-junit4-imports.skip>
+        <ban-deprecated-stapler.skip>false</ban-deprecated-stapler.skip>
+        <ban-commons-lang-2.skip>false</ban-commons-lang-2.skip>
     </properties>
 
     <repositories>

@@ -1,1 +1,6 @@
 /target/
+work/
+*.hpi
+*.jpi
+.idea/
+*.iml
