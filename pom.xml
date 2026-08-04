@@ -12,10 +12,10 @@
     </parent>
 
     <groupId>io.jenkins.plugins</groupId>
-    <artifactId>displaybuilderusernameandparametersplugin</artifactId>
+    <artifactId>build-user-display</artifactId>
     <version>${changelist}</version>
     <packaging>hpi</packaging>
-    <name>Display Builder Username And Parameters Plugin</name>
+    <name>Build User Display</name>
     <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
 
     <licenses>
@@ -42,6 +42,18 @@
         <ban-deprecated-stapler.skip>false</ban-deprecated-stapler.skip>
         <ban-commons-lang-2.skip>false</ban-commons-lang-2.skip>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.jenkins.tools.bom</groupId>
+                <artifactId>bom-${jenkins.baseline}.x</artifactId>
+                <version>6783.v88c6c30f4b_db_</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <repositories>
         <repository>

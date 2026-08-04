@@ -1,4 +1,4 @@
-# Build User Display Plugin
+# Build User Display
 
 [Türkçe (Turkish)](#türkçe) | [English](#english)
 
